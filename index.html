@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/phosphor-icons"></script>
 
     <title>Document</title>
@@ -25,24 +28,158 @@
           <div class="search-field">
             <label for="name" class="sr-only">Pesquise por nome</label>
             <i class="ph-magnifying-glass"></i>
-            <input type="text" id="name" name="name" placeholder="Pesquise por nome">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Pesquise por nome"
+            />
           </div>
 
-          <div class="search-field selected"> 
+          <div class="search-field selected">
             <i class="ph-map-pin"></i>
-            <label class="sr-only" for="city" >Selecione uma cidade</label>
+            <label class="sr-only" for="city">Selecione uma cidade</label>
             <select name="city" id="city">
-              <option value="0" selected> Selecione uma cidade </option>
+              <option value="0" selected>Selecione uma cidade</option>
               <option value="sao-paulo">SP</option>
               <option value="rio-grande-do-sul">POA</option>
             </select>
-            <i class="ph-caret-down"></i>
 
+            <i class="ph-caret-down-light"></i>
           </div>
           <button>BUSCAR AGORA</button>
         </form>
-
-      </div> 
+      </div>
     </header>
+
+
+    <main>
+      <div class="content">
+        <section class="top">
+          <h2>Blocos recomendados</h2>
+          <div class="view">
+            <button class="btn-list" id="btn-selected" >LISTA</button>
+            <button class="btn-map" id="btn-not-selected">MAPA</button>
+          </div>
+        </section>
+
+
+        <section class="cards" >
+
+          <div class="card">
+            <img src="./assets/card-01.png" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>O Python do vovô não sobe mais</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> São Paulo - SP</p>
+              </div>   
+            </div> 
+          </div>
+
+         <div class="card">
+            <img src="./assets/card-02.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Todo mundo mundo Null</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> Florianópolis -SC</p>
+              </div>   
+            </div> 
+          </div>
+
+          <div class="card">
+            <img src="./assets/card-03.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Hoje dou exception</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> Curitiba - Pr</p>
+              </div>   
+            </div> 
+          </div>
+
+          <div class="card">
+            <img src="./assets/card-04.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Manda Node</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> Salvador - BA</p>
+              </div>   
+            </div> 
+          </div>
+
+          <div class="card">
+            <img src="./assets/card-05.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Só no back-end</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> São Paulo - SP</p>
+              </div>   
+            </div> 
+          </div>
+
+          <div class="card">
+            <img src="./assets/card-06.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Esse anel não é de Ruby</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> São Paulo - SP</p>
+              </div>   
+            </div> 
+          </div>
+
+           <div class="card">
+            <img src="./assets/card-07.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Pimenta no C# dos outros é Refresco</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> Rio de Janeiro - RJ</p>
+              </div>   
+            </div> 
+          </div>
+
+          <div class="card">
+            <img src="./assets/card-08.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>EnCACHE aqui</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> Porto Alegre- RS</p>
+              </div>   
+            </div> 
+          </div>
+
+          <div class="card">
+            <img src="./assets/card-09.jpg" alt="Homem de chapéu cartola no Carnaval">
+            <div class="content-main"> 
+              <h3>Não valho nada mas JAVA li</h3>
+              <p>Amet minim mollit desesunt ullamco est sit aliqua dolor do amet sint.</p>
+              <div class="location">
+                <i class="ph-map-pin-light"> </i>
+                  <p> São Paulo - SP</p>
+              </div>   
+            </div> 
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <h2>  &copy;  Created by Helena Antoni - 2023.</h2>
+    </footer>
   </body>
 </html>
