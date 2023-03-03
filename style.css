@@ -139,6 +139,10 @@ select {
   min-width: 29rem;
 }
 
+select{ 
+  cursor: pointer;
+}
+
 .search-field,
 .search-field.selected {
   display: flex;
@@ -184,8 +188,7 @@ section.top {
 
 section.top h2 {
   font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 140%;
+  font-size: 3.2rem; 
 }
 
 .view {
@@ -218,13 +221,17 @@ section.cards {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .card {
-  max-width: 38.4rem;
-
+  max-width: 38.4rem; 
   max-height: 3 0.3rem;
-  overflow: hidden;
-
-  border: 0.1rem solid #eaeaea;
+  overflow: hidden; 
+  border: 0.2rem solid #d3d3d3;
   border-radius: 1rem;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  background-color: #f8f8ff;; 
+  cursor: pointer;
 }
 
 .content-main {
@@ -254,7 +261,7 @@ section.cards {
 }
 
 footer {
-  min-height: 10rem;
+  min-height: 7rem;
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
@@ -272,7 +279,7 @@ footer::before {
   content: "";
   background-image: url(./assets/header-before.svg);
   width: 40.7rem;
-  height: 10.5rem;
+  height: 7.87rem;
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -307,7 +314,7 @@ main {
 
 @media (max-width: 350px) {
   section.top {
-    width: 50%;
+    width: 50%; 
   }
 }
 
@@ -320,7 +327,7 @@ main {
 @media (max-width: 500px) {
   section.cards {
     grid-template-columns: 1fr;
-  }
+  } 
 
   .card img {
     width: 100%;
@@ -342,6 +349,10 @@ main {
 
   .card {
     max-width: 100%;
+  }
+  
+  .view{
+    height: 50%;
   }
 }
  
