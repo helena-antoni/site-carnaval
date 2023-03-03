@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <div class="top">
+          <p>FIND YOUR BLOCK</p>
+          <h1>Encontre os <span>melhores blocos</span> do carnaval de 2023.</h1>
+        </div>
+
+        <form action="" class="search">
+          <div class="search-field">
+            <label for="name" class="sr-only">Pesquise por nome</label>
+            <i class="ph-magnifying-glass"></i>
+            <input type="text" id="name" name="name" placeholder="Pesquise por nome">
+          </div>
+
+          <div class="search-field selected"> 
+            <i class="ph-map-pin"></i>
+            <label class="sr-only" for="city" >Selecione uma cidade</label>
+            <select name="city" id="city">
+              <option value="0" selected> Selecione uma cidade </option>
+              <option value="sao-paulo">SP</option>
+              <option value="rio-grande-do-sul">POA</option>
+            </select>
+            <i class="ph-caret-down"></i>
+
+          </div>
+          <button>BUSCAR AGORA</button>
+        </form>
+
+      </div> 
+    </header>
+  </body>
+</html>

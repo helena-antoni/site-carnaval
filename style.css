@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -web-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0; 
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  min-height: 53.2rem; 
+  background-color: #f8f8ff;
+  position: relative; 
+  overflow: hidden;  
+ 
+  display: grid;
+  place-content: center;
+  
+}
+
+header::before {
+  content: ""; 
+  background-image: url( ./assets/header-before.svg );
+  width: 40.7rem;
+  height: 34.5rem; 
+  position: absolute;
+  z-index: 0;
+  top:0;
+  left: 0;
+}
+ 
+header::after {
+  content: ""; 
+  background-image: url( ./assets/header-after.svg );
+  width: 41.4rem; 
+  height: 33rem; 
+  position: absolute ;
+  right:0;
+  bottom:-1.2rem;
+}
+
+header>.content{
+  width: fit-content;  
+  position: relative;
+  z-index: 1;  
+  margin: auto; 
+  display: grid;
+  gap: 4rem;
+}
+
+header .content .top{
+  text-align: center; 
+}
+
+header p{
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.6rem; 
+  color: #E45858; 
+  text-transform: uppercase; 
+}
+
+header h1{ 
+  font-size: 4.8rem;
+  color: #121214;
+  line-height: 125%;
+  color: #121214;
+  max-width: 64.7rem;
+  margin: auto;
+}
+
+header span{
+  color: #6246EA ;
+}
+
+header form{  
+  display: flex;  
+  padding: 40px;
+  gap: 24px; 
+
+  background: #FFFFFF;
+  border: 0.1rem solid #EAEAEA;
+  border-radius: 10px;
+}
+
+button,label, select, input{ 
+  all:unset;
+}
+
+input,select {
+  font-weight: 400;
+  font-size:1.6rem;
+  color:#7C7C8A;  
+  min-width: 29rem;
+}
+
+i{
+  color: #E45858;
+  font-size: 2.4rem;
+;
+}
+.search-field, 
+.search-field.selected{
+  display:  flex; 
+  align-items: center;
+  gap:1.2rem; 
+  background-color:  #F4F4FF;
+  padding: 1.2rem .8rem 1.2rem 1.4rem;
+  border-radius: .5rem;   
+}
+
+.search-field.selected > .ph-caret-down{
+  color: #858793; 
+}
+
+form button{ 
+  background-color: #6246EA;
+  color:white;
+  padding: 1.2rem 3.2rem;
+  border-radius: .5rem; 
+  font-size: 1.4rem; 
+  line-height: 2.4rem;
+  justify-content: center;
+  align-items: center; 
+  gap: 8px;
+  text-transform: uppercase; 
+}
+.search-field.selected option:hover{
+  background-color: #6246EA;  
+} 
+   
